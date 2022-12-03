@@ -65,25 +65,13 @@ def crear(cedula: int, nombre: str, apellido: str):
 #######################################################
 print("Iniciando " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 cargar_variables()
-
-print("Listar personas:")
-listar()
-print("________________")
-
-
-print("Crear persona:")
-crear(4783242,"Carlos", "Ayala")
-print("________________")
-
-
-print("Crear persona:")
-crear(4783242,"Carlos", "Ayala")
-print("________________")
-
-
-print("Listar personas:")
-listar()
-print("________________")
-
-
-print("Finalizando " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+   valor=input("Introduce si quiere listar o crear una persona")
+   if valor == "listar":
+   print("Listar personas:")
+   listar()
+   print("________________")
+   else:
+   print("Crear persona:")
+   crear(4783242,"Carlos", "Ayala")
+   print("________________")
+   print("Finalizando " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
